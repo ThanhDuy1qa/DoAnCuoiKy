@@ -33,7 +33,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpBangSanPham = new System.Windows.Forms.FlowLayoutPanel();
             this.tsmiTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiThongTinCaNhan = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDangXuat = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,11 +41,11 @@
             this.tsmiDonMua = new System.Windows.Forms.ToolStripMenuItem();
             this.donHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lichSuMuaHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.msMenu = new System.Windows.Forms.MenuStrip();
             this.tsmiDangSanPham = new System.Windows.Forms.ToolStripMenuItem();
             this.btnTim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip2.SuspendLayout();
+            this.msMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -90,12 +90,12 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // flowLayoutPanel1
+            // flpBangSanPham
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 163);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(819, 449);
-            this.flowLayoutPanel1.TabIndex = 25;
+            this.flpBangSanPham.Location = new System.Drawing.Point(12, 163);
+            this.flpBangSanPham.Name = "flpBangSanPham";
+            this.flpBangSanPham.Size = new System.Drawing.Size(819, 449);
+            this.flpBangSanPham.TabIndex = 25;
             // 
             // tsmiTaiKhoan
             // 
@@ -146,18 +146,18 @@
             this.lichSuMuaHangToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lichSuMuaHangToolStripMenuItem.Text = "Vi";
             // 
-            // menuStrip2
+            // msMenu
             // 
-            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.msMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiTaiKhoan,
             this.tsmiQuanLyDonHang,
             this.tsmiDangSanPham});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(843, 28);
-            this.menuStrip2.TabIndex = 10;
-            this.menuStrip2.Text = "menuStrip2";
+            this.msMenu.Location = new System.Drawing.Point(0, 0);
+            this.msMenu.Name = "msMenu";
+            this.msMenu.Size = new System.Drawing.Size(843, 28);
+            this.msMenu.TabIndex = 10;
+            this.msMenu.Text = "menuStrip2";
             // 
             // tsmiDangSanPham
             // 
@@ -181,18 +181,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 633);
             this.Controls.Add(this.btnTim);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flpBangSanPham);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTimKiem);
-            this.Controls.Add(this.menuStrip2);
+            this.Controls.Add(this.msMenu);
             this.Name = "GiaoDienChinh";
             this.Text = "NMGiaoDienChinh";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
+            this.msMenu.ResumeLayout(false);
+            this.msMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,7 +210,7 @@
         private UCSanPham ucSanPham4;
         private UCSanPham ucSanPham5;
         private UCSanPham ucSanPham6;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpBangSanPham;
         private System.Windows.Forms.ToolStripMenuItem tsmiTaiKhoan;
         private System.Windows.Forms.ToolStripMenuItem tsmiThongTinCaNhan;
         private System.Windows.Forms.ToolStripMenuItem tsmiDangXuat;
@@ -218,7 +218,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiDonMua;
         private System.Windows.Forms.ToolStripMenuItem donHangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lichSuMuaHangToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.MenuStrip msMenu;
         private System.Windows.Forms.ToolStripMenuItem tsmiDangSanPham;
         private System.Windows.Forms.Button btnTim;
     }
