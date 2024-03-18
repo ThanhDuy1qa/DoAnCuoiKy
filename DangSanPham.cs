@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoAnCuoiKy
 {
-    public partial class DangSanPham : Form
+    public partial class fDangSanPham : Form
     {
-        public DangSanPham()
+        public fDangSanPham()
         {
             InitializeComponent();
         }

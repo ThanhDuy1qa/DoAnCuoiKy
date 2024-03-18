@@ -29,73 +29,69 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbTenSanPham = new System.Windows.Forms.Label();
+            this.lbGiaBan = new System.Windows.Forms.Label();
+            this.ptbAnhSanPham = new System.Windows.Forms.PictureBox();
+            this.lbKhuVuc = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lbThoiGianDang = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAnhSanPham)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbTenSanPham
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 133);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Dau an truong an";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbTenSanPham.AutoSize = true;
+            this.lbTenSanPham.Location = new System.Drawing.Point(26, 133);
+            this.lbTenSanPham.Name = "lbTenSanPham";
+            this.lbTenSanPham.Size = new System.Drawing.Size(0, 16);
+            this.lbTenSanPham.TabIndex = 1;
+            this.lbTenSanPham.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label4
+            // lbGiaBan
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 160);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "20.000d";
+            this.lbGiaBan.AutoSize = true;
+            this.lbGiaBan.Location = new System.Drawing.Point(26, 160);
+            this.lbGiaBan.Name = "lbGiaBan";
+            this.lbGiaBan.Size = new System.Drawing.Size(0, 16);
+            this.lbGiaBan.TabIndex = 4;
             // 
-            // pictureBox1
+            // ptbAnhSanPham
             // 
-            this.pictureBox1.Image = global::DoAnCuoiKy.Properties.Resources.z4934245855617_16130f0bf2eb31b0c797d45d87426190;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 112);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.ptbAnhSanPham.Image = global::DoAnCuoiKy.Properties.Resources.z4934245855617_16130f0bf2eb31b0c797d45d87426190;
+            this.ptbAnhSanPham.Location = new System.Drawing.Point(29, 3);
+            this.ptbAnhSanPham.Name = "ptbAnhSanPham";
+            this.ptbAnhSanPham.Size = new System.Drawing.Size(114, 112);
+            this.ptbAnhSanPham.TabIndex = 0;
+            this.ptbAnhSanPham.TabStop = false;
             // 
-            // label3
+            // lbKhuVuc
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 197);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 16);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Ho Chi Minh";
+            this.lbKhuVuc.AutoSize = true;
+            this.lbKhuVuc.Location = new System.Drawing.Point(128, 186);
+            this.lbKhuVuc.Name = "lbKhuVuc";
+            this.lbKhuVuc.Size = new System.Drawing.Size(0, 16);
+            this.lbKhuVuc.TabIndex = 6;
             // 
-            // label2
+            // lbThoiGianDang
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 197);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 16);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "42 giay truoc";
+            this.lbThoiGianDang.AutoSize = true;
+            this.lbThoiGianDang.Location = new System.Drawing.Point(26, 186);
+            this.lbThoiGianDang.Name = "lbThoiGianDang";
+            this.lbThoiGianDang.Size = new System.Drawing.Size(0, 16);
+            this.lbThoiGianDang.TabIndex = 7;
             // 
             // UCSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lbThoiGianDang);
+            this.Controls.Add(this.lbKhuVuc);
+            this.Controls.Add(this.lbGiaBan);
+            this.Controls.Add(this.lbTenSanPham);
+            this.Controls.Add(this.ptbAnhSanPham);
             this.Name = "UCSanPham";
-            this.Size = new System.Drawing.Size(246, 274);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(241, 230);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAnhSanPham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,11 +99,11 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox ptbAnhSanPham;
+        private System.Windows.Forms.Label lbTenSanPham;
+        private System.Windows.Forms.Label lbGiaBan;
+        private System.Windows.Forms.Label lbKhuVuc;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbThoiGianDang;
     }
 }

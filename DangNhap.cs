@@ -16,5 +16,12 @@ namespace DoAnCuoiKy
         {
             InitializeComponent();
         }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fGiaoDienChinh f = new fGiaoDienChinh();
+            f.Show();
+        }
     }
 }

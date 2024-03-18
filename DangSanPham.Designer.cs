@@ -1,6 +1,6 @@
 ﻿namespace DoAnCuoiKy
 {
-    partial class DangSanPham
+    partial class fDangSanPham
     {
         /// <summary>
         /// Required designer variable.
@@ -242,7 +242,7 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 56;
             // 
-            // NBThongTinSanPham
+            // fDangSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -269,8 +269,8 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTenSP);
-            this.Name = "NBThongTinSanPham";
-            this.Text = "NBThongTinSanPham";
+            this.Name = "fDangSanPham";
+            this.Text = "Dang san pham";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
