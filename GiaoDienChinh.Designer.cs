@@ -31,19 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.aaaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thongTinCaNhanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dangXuatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bbbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gioHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiThongTinCaNhan = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDangXuat = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQuanLyDonHang = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDonMua = new System.Windows.Forms.ToolStripMenuItem();
             this.donHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lichSuMuaHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.dangSanPhamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDangSanPham = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnTim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -72,15 +72,6 @@
             this.textBox1.TabIndex = 14;
             this.textBox1.Text = "Tim kiem san pham";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(178, 138);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 16);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Tim kiem";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -106,86 +97,93 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(819, 449);
             this.flowLayoutPanel1.TabIndex = 25;
             // 
-            // aaaToolStripMenuItem
+            // tsmiTaiKhoan
             // 
-            this.aaaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thongTinCaNhanToolStripMenuItem,
-            this.dangXuatToolStripMenuItem});
-            this.aaaToolStripMenuItem.Name = "aaaToolStripMenuItem";
-            this.aaaToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
-            this.aaaToolStripMenuItem.Text = "Tai khoan";
+            this.tsmiTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiThongTinCaNhan,
+            this.tsmiDangXuat});
+            this.tsmiTaiKhoan.Name = "tsmiTaiKhoan";
+            this.tsmiTaiKhoan.Size = new System.Drawing.Size(85, 24);
+            this.tsmiTaiKhoan.Text = "Tai khoan";
             // 
-            // thongTinCaNhanToolStripMenuItem
+            // tsmiThongTinCaNhan
             // 
-            this.thongTinCaNhanToolStripMenuItem.Name = "thongTinCaNhanToolStripMenuItem";
-            this.thongTinCaNhanToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.thongTinCaNhanToolStripMenuItem.Text = "Thong tin ca nhan";
+            this.tsmiThongTinCaNhan.Name = "tsmiThongTinCaNhan";
+            this.tsmiThongTinCaNhan.Size = new System.Drawing.Size(224, 26);
+            this.tsmiThongTinCaNhan.Text = "Thong tin ca nhan";
             // 
-            // dangXuatToolStripMenuItem
+            // tsmiDangXuat
             // 
-            this.dangXuatToolStripMenuItem.Name = "dangXuatToolStripMenuItem";
-            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.dangXuatToolStripMenuItem.Text = "Dang xuat";
+            this.tsmiDangXuat.Name = "tsmiDangXuat";
+            this.tsmiDangXuat.Size = new System.Drawing.Size(224, 26);
+            this.tsmiDangXuat.Text = "Dang xuat";
             // 
-            // bbbToolStripMenuItem
+            // tsmiQuanLyDonHang
             // 
-            this.bbbToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gioHangToolStripMenuItem,
+            this.tsmiQuanLyDonHang.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiDonMua,
             this.donHangToolStripMenuItem,
             this.lichSuMuaHangToolStripMenuItem});
-            this.bbbToolStripMenuItem.Name = "bbbToolStripMenuItem";
-            this.bbbToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
-            this.bbbToolStripMenuItem.Text = "Quan ly don hang";
+            this.tsmiQuanLyDonHang.Name = "tsmiQuanLyDonHang";
+            this.tsmiQuanLyDonHang.Size = new System.Drawing.Size(140, 24);
+            this.tsmiQuanLyDonHang.Text = "Quan ly don hang";
             // 
-            // gioHangToolStripMenuItem
+            // tsmiDonMua
             // 
-            this.gioHangToolStripMenuItem.Name = "gioHangToolStripMenuItem";
-            this.gioHangToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.gioHangToolStripMenuItem.Text = "Don mua";
-            this.gioHangToolStripMenuItem.Click += new System.EventHandler(this.gioHangToolStripMenuItem_Click);
+            this.tsmiDonMua.Name = "tsmiDonMua";
+            this.tsmiDonMua.Size = new System.Drawing.Size(224, 26);
+            this.tsmiDonMua.Text = "Don mua";
             // 
             // donHangToolStripMenuItem
             // 
             this.donHangToolStripMenuItem.Name = "donHangToolStripMenuItem";
             this.donHangToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.donHangToolStripMenuItem.Text = "Don ban";
-            this.donHangToolStripMenuItem.Click += new System.EventHandler(this.donHangToolStripMenuItem_Click);
             // 
             // lichSuMuaHangToolStripMenuItem
             // 
             this.lichSuMuaHangToolStripMenuItem.Name = "lichSuMuaHangToolStripMenuItem";
             this.lichSuMuaHangToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lichSuMuaHangToolStripMenuItem.Text = "Vi";
-            this.lichSuMuaHangToolStripMenuItem.Click += new System.EventHandler(this.lichSuMuaHangToolStripMenuItem_Click);
             // 
             // menuStrip2
             // 
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aaaToolStripMenuItem,
-            this.bbbToolStripMenuItem,
-            this.dangSanPhamToolStripMenuItem});
+            this.tsmiTaiKhoan,
+            this.tsmiQuanLyDonHang,
+            this.tsmiDangSanPham});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(843, 28);
             this.menuStrip2.TabIndex = 10;
             this.menuStrip2.Text = "menuStrip2";
             // 
-            // dangSanPhamToolStripMenuItem
+            // tsmiDangSanPham
             // 
-            this.dangSanPhamToolStripMenuItem.Name = "dangSanPhamToolStripMenuItem";
-            this.dangSanPhamToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
-            this.dangSanPhamToolStripMenuItem.Text = "Dang san pham";
+            this.tsmiDangSanPham.Name = "tsmiDangSanPham";
+            this.tsmiDangSanPham.Size = new System.Drawing.Size(127, 24);
+            this.tsmiDangSanPham.Text = "Dang san pham";
+            this.tsmiDangSanPham.Click += new System.EventHandler(this.dangSanPhamToolStripMenuItem_Click);
+            // 
+            // btnTim
+            // 
+            this.btnTim.Location = new System.Drawing.Point(675, 134);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(75, 23);
+            this.btnTim.TabIndex = 0;
+            this.btnTim.Text = "Tim";
+            this.btnTim.UseVisualStyleBackColor = true;
             // 
             // GiaoDienChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 633);
+            this.Controls.Add(this.btnTim);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTimKiem);
@@ -204,7 +202,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private UCSanPham ucSanPham1;
@@ -214,14 +211,15 @@
         private UCSanPham ucSanPham5;
         private UCSanPham ucSanPham6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.ToolStripMenuItem aaaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thongTinCaNhanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dangXuatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bbbToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gioHangToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiTaiKhoan;
+        private System.Windows.Forms.ToolStripMenuItem tsmiThongTinCaNhan;
+        private System.Windows.Forms.ToolStripMenuItem tsmiDangXuat;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQuanLyDonHang;
+        private System.Windows.Forms.ToolStripMenuItem tsmiDonMua;
         private System.Windows.Forms.ToolStripMenuItem donHangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lichSuMuaHangToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem dangSanPhamToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiDangSanPham;
+        private System.Windows.Forms.Button btnTim;
     }
 }

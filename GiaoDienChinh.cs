@@ -17,17 +17,7 @@ namespace DoAnCuoiKy
             InitializeComponent();
         }
 
-        private void donHangToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lichSuMuaHangToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gioHangToolStripMenuItem_Click(object sender, EventArgs e)
+        private void dangSanPhamToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
