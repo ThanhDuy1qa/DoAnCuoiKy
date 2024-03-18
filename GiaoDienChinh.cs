@@ -19,7 +19,9 @@ namespace DoAnCuoiKy
 
         private void dangSanPhamToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fDangSanPham f = new fDangSanPham();
+            f.Show();
         }
     }
 }

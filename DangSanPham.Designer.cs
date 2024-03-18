@@ -52,6 +52,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnThemHinh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -197,9 +198,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DoAnCuoiKy.Properties.Resources.z4934245855617_16130f0bf2eb31b0c797d45d87426190;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 18);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 282);
+            this.pictureBox1.Size = new System.Drawing.Size(212, 245);
             this.pictureBox1.TabIndex = 51;
             this.pictureBox1.TabStop = false;
             // 
@@ -242,11 +243,21 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 56;
             // 
-            // fDangSanPham
+            // btnThemHinh
+            // 
+            this.btnThemHinh.Location = new System.Drawing.Point(207, 240);
+            this.btnThemHinh.Name = "btnThemHinh";
+            this.btnThemHinh.Size = new System.Drawing.Size(26, 23);
+            this.btnThemHinh.TabIndex = 57;
+            this.btnThemHinh.Text = "+";
+            this.btnThemHinh.UseVisualStyleBackColor = true;
+            // 
+            // DangSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(741, 336);
+            this.Controls.Add(this.btnThemHinh);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label1);
@@ -269,8 +280,8 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTenSP);
-            this.Name = "fDangSanPham";
-            this.Text = "Dang san pham";
+            this.Name = "DangSanPham";
+            this.Text = "NBThongTinSanPham";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -303,5 +314,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnThemHinh;
     }
 }
