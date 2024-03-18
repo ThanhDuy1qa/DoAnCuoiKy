@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -71,12 +74,6 @@
     <Compile Include="NBQuanLyDonHang.Designer.cs">
       <DependentUpon>NBQuanLyDonHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="NBThongKeVaBaoCao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NBThongKeVaBaoCao.Designer.cs">
-      <DependentUpon>NBThongKeVaBaoCao.cs</DependentUpon>
-    </Compile>
     <Compile Include="NBThongTinCaNhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,11 +86,11 @@
     <Compile Include="NBThongTinLienHe.Designer.cs">
       <DependentUpon>NBThongTinLienHe.cs</DependentUpon>
     </Compile>
-    <Compile Include="NBThongTinSanPham.cs">
+    <Compile Include="DangSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NBThongTinSanPham.Designer.cs">
-      <DependentUpon>NBThongTinSanPham.cs</DependentUpon>
+    <Compile Include="DangSanPham.Designer.cs">
+      <DependentUpon>DangSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="NMTheoDoiDonHang.cs">
       <SubType>Form</SubType>
@@ -175,17 +172,14 @@
     <EmbeddedResource Include="NBQuanLyDonHang.resx">
       <DependentUpon>NBQuanLyDonHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NBThongKeVaBaoCao.resx">
-      <DependentUpon>NBThongKeVaBaoCao.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="NBThongTinCaNhan.resx">
       <DependentUpon>NBThongTinCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NBThongTinLienHe.resx">
       <DependentUpon>NBThongTinLienHe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NBThongTinSanPham.resx">
-      <DependentUpon>NBThongTinSanPham.cs</DependentUpon>
+    <EmbeddedResource Include="DangSanPham.resx">
+      <DependentUpon>DangSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NMTheoDoiDonHang.resx">
       <DependentUpon>NMTheoDoiDonHang.cs</DependentUpon>
@@ -230,6 +224,7 @@
     <EmbeddedResource Include="UCXacNhanMua.resx">
       <DependentUpon>UCXacNhanMua.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
