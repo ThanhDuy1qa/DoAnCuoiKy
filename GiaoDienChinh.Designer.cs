@@ -33,12 +33,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flpBangSanPham = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucSanPham7 = new DoAnCuoiKy.UCSanPham();
-            this.ucSanPham8 = new DoAnCuoiKy.UCSanPham();
-            this.ucSanPham9 = new DoAnCuoiKy.UCSanPham();
-            this.ucSanPham10 = new DoAnCuoiKy.UCSanPham();
-            this.ucSanPham11 = new DoAnCuoiKy.UCSanPham();
-            this.ucSanPham12 = new DoAnCuoiKy.UCSanPham();
             this.tsmiTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiThongTinCaNhan = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDangXuat = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,9 +43,8 @@
             this.msMenu = new System.Windows.Forms.MenuStrip();
             this.tsmiDangSanPham = new System.Windows.Forms.ToolStripMenuItem();
             this.txtTim = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnTim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.flpBangSanPham.SuspendLayout();
             this.msMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,58 +84,10 @@
             // 
             // flpBangSanPham
             // 
-            this.flpBangSanPham.Controls.Add(this.ucSanPham7);
-            this.flpBangSanPham.Controls.Add(this.ucSanPham8);
-            this.flpBangSanPham.Controls.Add(this.ucSanPham9);
-            this.flpBangSanPham.Controls.Add(this.ucSanPham10);
-            this.flpBangSanPham.Controls.Add(this.ucSanPham11);
-            this.flpBangSanPham.Controls.Add(this.ucSanPham12);
             this.flpBangSanPham.Location = new System.Drawing.Point(12, 163);
             this.flpBangSanPham.Name = "flpBangSanPham";
             this.flpBangSanPham.Size = new System.Drawing.Size(819, 449);
             this.flpBangSanPham.TabIndex = 25;
-            // 
-            // ucSanPham7
-            // 
-            this.ucSanPham7.Location = new System.Drawing.Point(3, 3);
-            this.ucSanPham7.Name = "ucSanPham7";
-            this.ucSanPham7.Size = new System.Drawing.Size(240, 232);
-            this.ucSanPham7.TabIndex = 0;
-            // 
-            // ucSanPham8
-            // 
-            this.ucSanPham8.Location = new System.Drawing.Point(249, 3);
-            this.ucSanPham8.Name = "ucSanPham8";
-            this.ucSanPham8.Size = new System.Drawing.Size(241, 230);
-            this.ucSanPham8.TabIndex = 1;
-            // 
-            // ucSanPham9
-            // 
-            this.ucSanPham9.Location = new System.Drawing.Point(496, 3);
-            this.ucSanPham9.Name = "ucSanPham9";
-            this.ucSanPham9.Size = new System.Drawing.Size(241, 230);
-            this.ucSanPham9.TabIndex = 2;
-            // 
-            // ucSanPham10
-            // 
-            this.ucSanPham10.Location = new System.Drawing.Point(3, 241);
-            this.ucSanPham10.Name = "ucSanPham10";
-            this.ucSanPham10.Size = new System.Drawing.Size(241, 230);
-            this.ucSanPham10.TabIndex = 3;
-            // 
-            // ucSanPham11
-            // 
-            this.ucSanPham11.Location = new System.Drawing.Point(250, 241);
-            this.ucSanPham11.Name = "ucSanPham11";
-            this.ucSanPham11.Size = new System.Drawing.Size(241, 230);
-            this.ucSanPham11.TabIndex = 4;
-            // 
-            // ucSanPham12
-            // 
-            this.ucSanPham12.Location = new System.Drawing.Point(497, 241);
-            this.ucSanPham12.Name = "ucSanPham12";
-            this.ucSanPham12.Size = new System.Drawing.Size(241, 230);
-            this.ucSanPham12.TabIndex = 5;
             // 
             // tsmiTaiKhoan
             // 
@@ -215,26 +160,27 @@
             // 
             // txtTim
             // 
-            this.txtTim.Location = new System.Drawing.Point(246, 135);
+            this.txtTim.Location = new System.Drawing.Point(184, 135);
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(423, 22);
             this.txtTim.TabIndex = 14;
             // 
-            // listBox1
+            // btnTim
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(675, 135);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 20);
-            this.listBox1.TabIndex = 26;
+            this.btnTim.Location = new System.Drawing.Point(613, 135);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(75, 23);
+            this.btnTim.TabIndex = 0;
+            this.btnTim.Text = "Tim";
+            this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // fGiaoDienChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 633);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnTim);
             this.Controls.Add(this.flpBangSanPham);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
@@ -245,8 +191,8 @@
             this.MainMenuStrip = this.msMenu;
             this.Name = "fGiaoDienChinh";
             this.Text = "NMGiaoDienChinh";
+            this.Load += new System.EventHandler(this.fGiaoDienChinh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.flpBangSanPham.ResumeLayout(false);
             this.msMenu.ResumeLayout(false);
             this.msMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -275,13 +221,7 @@
         private System.Windows.Forms.ToolStripMenuItem lichSuMuaHangToolStripMenuItem;
         private System.Windows.Forms.MenuStrip msMenu;
         private System.Windows.Forms.ToolStripMenuItem tsmiDangSanPham;
-        private UCSanPham ucSanPham7;
-        private UCSanPham ucSanPham8;
-        private UCSanPham ucSanPham9;
-        private UCSanPham ucSanPham10;
-        private UCSanPham ucSanPham11;
-        private UCSanPham ucSanPham12;
         private System.Windows.Forms.TextBox txtTim;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnTim;
     }
 }

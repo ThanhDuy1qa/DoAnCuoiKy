@@ -45,7 +45,6 @@
             this.lbTenSanPham.Name = "lbTenSanPham";
             this.lbTenSanPham.Size = new System.Drawing.Size(0, 16);
             this.lbTenSanPham.TabIndex = 1;
-            this.lbTenSanPham.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbGiaBan
             // 
@@ -91,6 +90,7 @@
             this.Controls.Add(this.ptbAnhSanPham);
             this.Name = "UCSanPham";
             this.Size = new System.Drawing.Size(241, 230);
+            this.Load += new System.EventHandler(this.UCSanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptbAnhSanPham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
