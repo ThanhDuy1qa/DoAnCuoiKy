@@ -12,6 +12,7 @@ using System.Windows.Forms;
 namespace DoAnCuoiKy
 {
     public partial class fDangSanPham : Form
+    SqlConnection conn = new SqlConnection();
     {
         public fDangSanPham()
         {
@@ -21,11 +22,11 @@ namespace DoAnCuoiKy
         private void btnLuu_Click(object sender, EventArgs e)
         {
 
-            string SQL = string.Format("INSERT INTO SanPhamBan(ID, GiaCu, GiaMoi, MoTa, TinhTrang, KhuVuc, SoLuong, ChiTiet, NhomHang, ThuongHieu) VALUES ('{0}', '{1}', '{2}', '{3}','{4}','{5}','{6}','{7}','{8}','{9}')", txtID.Text, txtGiaMua.Text, txtGiaBan.Text, txtMoTa.Text, txtTinhTrang.Text, txtKhuVuc.Text, nmSoLuong.Value, txtChiTiet.Text, cbNhomHang.Text, txtThuongHieu.Text);
+            string SQL = string.Format("INSERT INTO SanPhamBan(ID_SanPham, TenSanPham, GiaMua, GiaBan, NgayMua, NgayDang, MoTa, TinhTrang, ThuongHieu, PhuKien, NhomHang, SoLuong, ID_NguoiDang, Hinh) VALUES ('{0}', '{1}', '{2}', '{3}','{4}','{5}','{6}','{7}','{8}','{9}', '{10}', '{11}', '{12}', '{13}')", txtIDSanPham.Text, txtGiaMua.Text, dtpNgayMua, dtpNgayDang, txtGiaBan.Text, txtMoTa.Text, txtTinhTrang.Text, txtThuongHieu.Text, txtPhuKien.Text, cbbNhomHang.Text, mudSoLuong.Value, lblShowIDNguoiDang.Text, ptbSanPham);
             try
             {
-                connection.Open();
-                SqlCommand cmd = new SqlCommand(SQL, connection);
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Them thanh cong");
             }
@@ -35,7 +36,7 @@ namespace DoAnCuoiKy
             }
             finally
             {
-                connection.Close();
+                conn.Close();
             }
         }
         private void btnThemHinh_Click(object sender, EventArgs e)
